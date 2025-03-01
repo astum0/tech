@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
         }
 
         elseif($userRole == 2){
-            return redirect()->intended(route('dashboard-superuser', absolute:false));
+            return redirect()->intended(route('dashboard-superuser.home', absolute:false));
         }
 
         elseif($userRole == 3){
